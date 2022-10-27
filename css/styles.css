@@ -26,7 +26,7 @@ body {
 }
 
 body {
-    background: url(/images/judge0_background.png) no-repeat center center fixed;
+    background: url(/images/Vikasak_Background.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,8 +44,8 @@ body {
 .lm_header .lm_tab {
     padding-bottom: 3px;
     height: 16px;
-    font-family: "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
-    font-size: 14px;
+    font-family: "Cascadia Code", monospace, monospace, "Droid Sans Fallback";
+    font-size: 16px;
 }
 
 .lm_header .lm_tab.lm_active {
@@ -112,15 +112,16 @@ body {
 }
 
 #site-header {
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-left: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-right: auto;
 }
 
 #site-header h2 {
     display: inline;
     vertical-align: middle;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
 }
 
 #site-content {
@@ -139,8 +140,8 @@ body {
 #status-line {
     background-color: var(--vikasak-theme);
     bottom: 0;
-    font-family: "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
-    font-size: 13px;
+    font-family: "Cascadia Code", monospace, monospace, "Droid Sans Fallback";
+    font-size: 15px;
     height: 19px;
     padding-left: 16px;
     padding-right: 16px;
