@@ -8,4 +8,4 @@ Vikasak is executing the user's source code using the Judge0 Compilation API.
 
 ## License
 
-This project is licensed under the MIT License <>
+This project is licensed under the [MIT License](https://github.com/DrInfinite/onlineIDE/blob/master/LICENSE)
