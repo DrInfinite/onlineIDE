@@ -668,6 +668,7 @@ $(document).ready(function () {
         MonacoVim = MVim;
         MonacoEmacs = MEmacs;
 
+        /* Creating a Monaco Editor in the container. */
         layout.registerComponent("source", function (container, state) {
             sourceEditor = monaco.editor.create(container.getElement()[0], {
                 automaticLayout: true,
@@ -690,6 +691,7 @@ $(document).ready(function () {
             sourceEditor.onDidLayoutChange(resizeEditor);
         });
 
+        /* Creating a Monaco editor in the container. */
         layout.registerComponent("stdin", function (container, state) {
             stdinEditor = monaco.editor.create(container.getElement()[0], {
                 automaticLayout: true,
@@ -703,6 +705,7 @@ $(document).ready(function () {
             });
         });
 
+        /* Creating a Monaco Editor instance and appending it to the container. */
         layout.registerComponent("stdout", function (container, state) {
             stdoutEditor = monaco.editor.create(container.getElement()[0], {
                 automaticLayout: true,
@@ -723,6 +726,7 @@ $(document).ready(function () {
             });
         });
 
+        /* Adding the status bar to the editor. */
         layout.on("initialised", function () {
             $(".monaco-editor")[0].appendChild($("#editor-status-line")[0]);
             if (getIdFromURI()) {
